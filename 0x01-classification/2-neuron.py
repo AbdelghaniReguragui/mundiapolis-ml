@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import numpy as np
-
 class Neuron:
     def __init__(self, nx):
         if type(nx) is not int:
@@ -11,7 +9,6 @@ class Neuron:
         self.__W = np.random.randn(1, nx)
         self.__b = 0
         self.__A = 0
-
     def forward_prop(self, X):
         Y = np.matmul(self.__W, X) + self.__b
-        Glogistic = 1/(1+np.exp(-1*Y))
+        Glogistic = 1/(1+np.exp(-Y))

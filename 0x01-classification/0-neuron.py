@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 import numpy as np
-
+"""
+fffffffffffffffffffffffffff
+"""
 class Neuron:
     def __init__(self, nx):
+        """
+        gggggggggggggggggggggggg
+        """
         if type(nx) is not int:
             raise TypeError("nx must be an integer")
         if nx < 1:
             raise ValueError("nx must be a positive integer")
-        
+        """
+        gggggggggggggg
+        """
         self.nx = nx
         self.W = np.random.randn(1, nx)
         self.b = 0

@@ -5,7 +5,7 @@ class Neuron:
     
     def __init__(self, nx):
     
-        if isinstance(nx, int):
+        if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
         
         if nx < 1:

@@ -17,13 +17,13 @@ class Neuron:
         self.__b = 0
         self.__A = 0
     
-    #
-        
+    #La fonction forward_prop 
     def forward_prop(self, X):
         preactivation = np.matmul(self.__W, X) + self.__b
         self.__A = 1 / (1 + np.exp(-preactivation))
         return self.__A
     
+# Setters
     @property
     def W(self):
         return self.__W

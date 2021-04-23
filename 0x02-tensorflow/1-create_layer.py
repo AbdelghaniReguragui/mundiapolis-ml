@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+each layer should be given the name layer
+"""
 
 import tensorflow as tf
 

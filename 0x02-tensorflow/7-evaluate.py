@@ -5,7 +5,11 @@ Evaluate
 import tensorflow as tf
 
 def evaluate(X, Y, save_path):
-
+    """
+    X is a numpy.ndarray containing the input data to evaluate
+    Y is a numpy.ndarray containing the one-hot labels for X
+    Returns: the network’s prediction, accuracy, and loss, respectively
+    """
     with tf.Session() as sess:
         saver = tf.train.import_meta_graph(save_path + ".meta")
         saver.restore(sess, save_path)

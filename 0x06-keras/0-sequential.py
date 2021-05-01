@@ -12,7 +12,6 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
     lambtha is the L2 regularization parameter
     keep_prob is the probability that a node will be kept for dropout
     You are not allowed to use the Input class
-    Returns: the keras model
     """
     model = K.Sequential()
     for i in range(len(layers)):
@@ -22,4 +21,5 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
                   kernel_regularizer=K.regularizers.l2(lambtha)))
         if i + 1 < len(layers):
             model.add(K.layers.Dropout(1 - keep_prob))
+    """Returns: the keras model"""
     return model

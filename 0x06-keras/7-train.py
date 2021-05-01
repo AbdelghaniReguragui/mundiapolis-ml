@@ -16,7 +16,6 @@ def train_model(network, data, labels, batch_size, epochs,
                                                             patience=patience))
             if learning_rate_decay:
                 def scheduler(epoch):
-                    """ Scheduler function """
                     return alpha * 1/(1 + decay_rate * epoch)
                 call_backs.append(
                             K.callbacks.LearningRateScheduler(scheduler,

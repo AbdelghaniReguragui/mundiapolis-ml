@@ -3,7 +3,6 @@
 forward propagation
 """
 import tensorflow as tf
-
 create_layer = __import__('1-create_layer').create_layer
 
 def forward_prop(x, layer_sizes=[], activations=[]):
@@ -13,7 +12,6 @@ def forward_prop(x, layer_sizes=[], activations=[]):
     activations: is a list containing the activation functions for each layer of the network
     Returns: the prediction of the network in tensor form
     """
-
     if len(layer_sizes) and len(activations):
         if len(layer_sizes) == len(activations):
             A = x

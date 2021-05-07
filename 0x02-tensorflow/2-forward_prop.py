@@ -9,6 +9,7 @@ def forward_prop(x, layer_sizes=[], activations=[]):
     layer_sizes" is a list containing the number of nodes in each layer of the network
     activations: is a list containing the activation functions for each layer of the network
     Returns: the prediction of the network in tensor form
+    Returns: the prediction of the network in tensor form
     """
     if len(layer_sizes) and len(activations):
         if len(layer_sizes) == len(activations):

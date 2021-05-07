@@ -3,9 +3,7 @@
 create placeholders
 """
 import tensorflow as tf
-"""
-function create_placeholders
-"""
+
 def create_placeholders(nx, classes):
     """
     nx: the number of feature columns in our data
@@ -16,4 +14,7 @@ def create_placeholders(nx, classes):
     """
     p1 = tf.placeholder("float", shape=[None, nx], name='x')
     p2 = tf.placeholder("float", shape=[None, classes], name='y')
+    """
+    function create_placeholders
+    """
     return p1, p2

@@ -17,7 +17,7 @@ def train_model(network, data, labels, batch_size, epochs,
 
     def l_r_decay(epoch):
         """
-        
+        filepath is the file path where the model should be saved
         """
         return alpha / (1 + decay_rate * epoch)
 

@@ -9,6 +9,7 @@ def save_model(network, filename):
     Returns: None
     """
     network.save(filename)
+    return None
 
 
 def load_model(filename):

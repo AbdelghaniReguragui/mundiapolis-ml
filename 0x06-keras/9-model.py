@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import tensoflow.keras as tk
+import tensorflow.keras as tk
 
 def save_model(network, filename):
   network.save(filename)

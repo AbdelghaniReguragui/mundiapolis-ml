@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import tensorflow.keras as K
+import tensorflow.keras as tk
 
 
 def save_weights(network, filename, save_format='h5'):

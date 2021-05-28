@@ -8,7 +8,7 @@ def save_model(network, filename):
     filename is the path of the file that the model should be saved to
     Returns: None
     """
-    network.save(filename)
+    network.save('./'+ filename)
 
 
 def load_model(filename):
@@ -16,5 +16,5 @@ def load_model(filename):
     filename is the path of the file that the model should be loaded from
     Returns: the loaded model
     """
-    model = K.models.load_model(filename)
+    model = K.models.load_model('./'+ filename)
     return model

@@ -2,7 +2,7 @@
 import tensoflow.keras as tk
 
 def save_model(network, filename):
-  model.save(filename)
+  network.save(filename)
   return None
 
 def load_model(filename):

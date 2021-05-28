@@ -6,5 +6,5 @@ def save_model(network, filename):
   return None
 
 def load_model(filename):
-  loaded_model = tf.keras.models.load_model(filename)
+  loaded_model = tk.models.load_model(filename)
   return loaded_model

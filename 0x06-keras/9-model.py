@@ -4,6 +4,7 @@ import tensorflow.keras as K
 
 def save_model(network, filename):
     """
+    def save_model(network, filename): saves an entire model:
     network is the model to save
     filename is the path of the file that the model should be saved to
     Returns: None

@@ -11,11 +11,11 @@ def save_config(network, filename):
   model_json = network.to_json()
   with open(filename, "w") as json_file:
     json_file.write(model_json)
-  return none
+  return None
 
 def load_config(filename):
   """
-   loads a model with a specific configuration:
+  loads a model with a specific configuration:
   filename is the path of the file containing the model’s configuration in JSON format
   Returns: the loaded model
   """

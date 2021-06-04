@@ -8,7 +8,7 @@ def save_config(network, filename):
   return none
 
 def load_config(filename):
-  with open(filename, 'r') as json_file:
+  with open(filename, "r") as json_file:
     loaded_model_json = json_file.read()
   network = K.models.model_from_json(loaded_model_json)
   return network
